@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "author": "reaper47i",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
