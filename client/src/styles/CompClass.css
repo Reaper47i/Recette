@@ -1,0 +1,82 @@
+.navbar {
+  height: 10vh;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background: var(--main-bg);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.logo {
+  width: max-content;
+  height: 100%;
+}
+.navbar .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.dialog .menu {
+  color: #330d5f;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: calc(10vh);
+  z-index: 1;
+  box-shadow: var(--main-shadow);
+  width: max-content;
+  height: 100%;
+  width: 50%;
+}
+
+.main {
+  height: max-content;
+  z-index: 0;
+  margin-top: 10vh;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  color: var(--text-col);
+}
+
+.searchBar .search {
+  width: inherit;
+  padding: 0.5rem 1rem;
+}
+
+.searchBar .search {
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.searchBar .search-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: var(--button-bg);
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: var(--button-hover);
+}
+
+.searchBar .adv-list ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}

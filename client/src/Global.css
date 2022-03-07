@@ -1,0 +1,132 @@
+@import "./styles/CompClass.css";
+
+:root {
+  --main-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+  --main-bg-gradient: linear-gradient(
+    180deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsl(214, 49%, 68%) 100%
+  );
+
+  --main-bg: hsl(186, 33%, 94%);
+  --button-bg: hsl(281, 55%, 77%);
+  --button-hover: hsl(281, 50%, 80%);
+  --text-col: #330d5f;
+}
+
+.App {
+  text-align: center;
+}
+
+/* div configs */
+
+/* flex types */
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-space-btwn {
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-space-around {
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-space-evenly {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex-left {
+  align-items: center;
+  justify-content: start;
+}
+
+.flex-right {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* width and height */
+.wh-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.wh-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* colors bg's gradients */
+
+.main-bg {
+  /* background: hsl(186, 33%, 94%); */
+  /* #ebf4f5 */
+  background: linear-gradient(
+    180deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsl(214, 49%, 68%) 100%
+  );
+}
+
+.nav-bg {
+  background: hsla(274, 66%, 53%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(274, 66%, 53%, 1) 0%,
+    hsla(235, 65%, 38%, 1) 100%
+  );
+}
+
+/*  Paddings and Margins  */
+
+/*  paddings  */
+
+.p-min {
+  padding: 0.5rem;
+}
+.px-min {
+  padding: 0 0.5rem;
+}
+.py-min {
+  padding: 0.5rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+/*  margins  */
+
+.mx-auto {
+  margin: 0 auto;
+}
