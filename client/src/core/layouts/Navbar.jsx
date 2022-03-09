@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "/logo1.png";
 import mobLogo from "/mob-logo.png";
-import { Menu, X } from "react-feather";
+import { Facebook, GitHub, Menu, Twitch, Twitter, X } from "react-feather";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -15,6 +15,10 @@ const menuSize = {
   color: "#330d5f",
   strokeWidth: "2",
 };
+
+// const socialSize = {
+//   size: "20",
+// };
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -40,13 +44,24 @@ const Navbar = () => {
         variants={variants}
         transition={"transition"}
       >
-        <ul>
-          <li>Discover</li>
-          <li>Cusines</li>
-          <li>New Recipes</li>
-          <li>Top Picks</li>
-          <li>Meal Planner</li>
-        </ul>
+        <div className="sidebar-content">
+          <ul>
+            <li>Discover</li>
+            <li>Cusines</li>
+            <li>New Recipes</li>
+            <li>Top Picks</li>
+            <li>Meal Planner</li>
+          </ul>
+          <div className="sb-about">
+            <div>
+              <Twitch size={35} />
+              <GitHub size={35} />
+              <Facebook size={35} />
+              <Twitter size={35} />
+            </div>
+            <div>Recette v.0.0.1</div>
+          </div>
+        </div>
       </motion.div>
     </div>
   );

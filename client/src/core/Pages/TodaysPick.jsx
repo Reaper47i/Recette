@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
+import parse from "html-react-parser";
 
-// const url = `https://api.spoonacular.com/recipes/random?apiKey=${API_KEY}`;
 const url = "http://localhost:8000/topPick";
-
-function stripHtml(dirtyString) {
-  const doc = new DOMParser().parseFromString(dirtyString, "text/html");
-  return doc.body.textContent || "";
-}
 
 const TodaysPick = () => {
   const [pick, setPick] = useState({});
@@ -21,9 +16,8 @@ const TodaysPick = () => {
     getData();
   }, []);
 
-  const summary = stripHtml(pick.summary);
-  // console.log(pick);
-  // console.log(typeof pick.summary);
+  const doc = `${pick.summary}`;
+
   return (
     <div className="tp">
       <div className="tpContent">
@@ -33,7 +27,7 @@ const TodaysPick = () => {
           style={{ objectPosition: "center", objectFit: "contain" }}
         />
         <h1>{pick.title}</h1>
-        <p>{summary}</p>
+        <p>{parse(doc)}</p>
       </div>
     </div>
   );

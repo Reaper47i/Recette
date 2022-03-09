@@ -1,4 +1,4 @@
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 const axios = require("axios");
 const express = require("express");
 const cors = require("cors");
@@ -27,7 +27,10 @@ server.get("/topPick", (req, res) => {
     });
 });
 
-// server.use("/data", require("./routes/randomRoute"));
+// routes =>
+server.use("/api/topPick", require("./routes/topPick"));
+// server.use("/api/cusines", require("./routes/cusines"));
+// server.use("/api/search", require("./routes/search"));
 
 server.listen(PORT, () => {
   console.log(`listening to port ${PORT}`);
