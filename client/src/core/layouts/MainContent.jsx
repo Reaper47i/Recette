@@ -1,4 +1,5 @@
 import React from "react";
+import Discover from "../Pages/Discover";
 import TodaysPick from "../Pages/TodaysPick";
 import SearchBar from "./SearchBar";
 
@@ -7,6 +8,7 @@ const MainContent = () => {
     <div className="main">
       <SearchBar />
       <TodaysPick />
+      <Discover />
     </div>
   );
 };

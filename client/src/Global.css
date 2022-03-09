@@ -1,4 +1,5 @@
 @import "./styles/CompClass.css";
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
 
 :root {
   --main-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
@@ -15,6 +16,10 @@
   --button-bg: hsl(281, 55%, 77%);
   --button-hover: hsl(281, 50%, 80%);
   --text-col: #330d5f;
+  --text-col2: #300829;
+
+  /* fonts */
+  --main-font: "Hubballi", cursive;
 }
 
 .App {

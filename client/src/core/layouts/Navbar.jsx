@@ -45,6 +45,7 @@ const Navbar = () => {
           <li>Cusines</li>
           <li>New Recipes</li>
           <li>Top Picks</li>
+          <li>Meal Planner</li>
         </ul>
       </motion.div>
     </div>

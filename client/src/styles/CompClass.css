@@ -73,10 +73,48 @@
   background-color: var(--button-hover);
 }
 
-.searchBar .adv-list ul {
+.searchBar .adv-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  box-shadow: var(--main-shadow);
+  padding: 1rem;
+}
+
+.tiles {
+  display: flex;
+  width: fit-content;
+  height: max-content;
+  padding: 0.4rem;
+  gap: 0.5rem;
+  border-radius: 7px;
+  background-color: var(--button-bg);
+  font-size: small;
+}
+
+.tp {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tpContent {
+  font-family: var(--main-font);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  padding: 1rem;
+  gap: 0.7rem;
+}
+.tpContent h1 {
+  color: var(--text-col);
+}
+.tpContent p {
+  font-size: 1.2rem;
+  color: var(--text-col2);
 }

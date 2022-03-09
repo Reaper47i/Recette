@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { ChevronDown } from "react-feather";
 import { motion } from "framer-motion";
+import { cusines } from "../data/Data";
+import SearchTiles from "./SearchTiles";
 
 const advList = {
   show: { opacity: 1, height: "100%" },
-  notShow: { opacitu: 0 },
+  notShow: { opacity: 0, height: "0" },
 };
 
 const SearchBar = () => {
@@ -17,17 +19,14 @@ const SearchBar = () => {
       <ChevronDown onClick={() => setShowList(!showList)} />
       <motion.div
         className="adv-list"
-        initial={{ opacity: 0, height: 0 }}
+        initial={{ opacity: 0, height: "0" }}
         variants={advList}
         animate={showList ? "show" : "notShow"}
+        transition={{ type: "tween" }}
       >
-        <ul>
-          <li>American</li>
-          <li>English</li>
-          <li>Indian</li>
-          <li>Italian</li>
-          <li>French</li>
-        </ul>
+        {cusines.map((item) => {
+          return <SearchTiles name={item} id={item} key={item} />;
+        })}
       </motion.div>
     </div>
   );
