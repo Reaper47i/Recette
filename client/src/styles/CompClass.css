@@ -1,6 +1,6 @@
 .navbar {
   height: 10vh;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -53,15 +53,15 @@
   height: max-content;
 }
 
-.sidebar ul li {
+.sidebar ul a {
   font-family: var(--sec-font);
   color: var(--text-col);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
-.sidebar ul li:hover {
-  font-weight: 600;
+.sidebar ul a:hover {
+  font-weight: 700;
 }
 
 .wrapper {

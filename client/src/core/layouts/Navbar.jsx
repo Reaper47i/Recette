@@ -3,6 +3,7 @@ import logo from "/logo1.png";
 import mobLogo from "/mob-logo.png";
 import { Facebook, GitHub, Menu, Twitch, Twitter, X } from "react-feather";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -25,7 +26,9 @@ const Navbar = () => {
   return (
     <div className="flex flex-space-btwn mx-auto navbar">
       <div className="logo flex">
-        <img src={mobLogo} alt="brand logo" />
+        <Link to="/">
+          <img src={mobLogo} alt="brand logo" />
+        </Link>
       </div>
       <div className="dialog flex flex-right wh-100">
         <div className="menu">
@@ -46,11 +49,21 @@ const Navbar = () => {
       >
         <div className="sidebar-content">
           <ul>
-            <li>Discover</li>
-            <li>Cusines</li>
-            <li>New Recipes</li>
-            <li>Top Picks</li>
-            <li>Meal Planner</li>
+            <Link onClick={() => setMenu(!menu)} to="/discover">
+              Discover
+            </Link>
+            <Link onClick={() => setMenu(!menu)} to="/cusines">
+              Cusines
+            </Link>
+            <Link onClick={() => setMenu(!menu)} to="/newRecipes">
+              New Recipes
+            </Link>
+            <Link onClick={() => setMenu(!menu)} to="/">
+              Top Picks
+            </Link>
+            <Link onClick={() => setMenu(!menu)} to="/mealPlanner">
+              Meal Planner
+            </Link>
           </ul>
           <div className="sb-about">
             <div>
