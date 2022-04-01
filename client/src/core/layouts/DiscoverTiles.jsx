@@ -1,12 +1,12 @@
 import React from "react";
 
-const DiscoverTiles = () => {
+const DiscoverTiles = ({ title, img, time, servings }) => {
   return (
     <div className="disc-tiles">
-      <h3>Title</h3>
-      <img src="" alt="" />
-      <p>description</p>
-      <p>info</p>
+      <img src={img} alt={title} height="240px" />
+      <h4>{title}</h4>
+      <p>Preparation Time - {time}</p>
+      <p>Servings - {servings}</p>
     </div>
   );
 };

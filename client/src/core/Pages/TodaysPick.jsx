@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import parse from "html-react-parser";
 
-const url = "http://localhost:8000/topPick";
+const url = "http://localhost:8000/api/topPick";
 
 const TodaysPick = () => {
   const [pick, setPick] = useState({});
@@ -20,6 +20,7 @@ const TodaysPick = () => {
 
   return (
     <div className="tp">
+      <h1>Today's Pick</h1>
       <div className="tpContent">
         <img
           src={pick.image}

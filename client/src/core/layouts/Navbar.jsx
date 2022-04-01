@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link onClick={() => setMenu(!menu)} to="/newRecipes">
               New Recipes
             </Link>
-            <Link onClick={() => setMenu(!menu)} to="/">
+            <Link onClick={() => setMenu(!menu)} to="/topPick">
               Top Picks
             </Link>
             <Link onClick={() => setMenu(!menu)} to="/mealPlanner">
